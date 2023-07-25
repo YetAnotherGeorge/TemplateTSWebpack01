@@ -1,0 +1,86 @@
+{"level":30,"time":"2023-07-25T15:30:04.411Z","pid":14112,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Creating 1 child"}
+{"level":30,"time":"2023-07-25T15:30:05.565Z","pid":12368,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tCHILD-0","msg":"Server is running on port 3002"}
+{"level":30,"time":"2023-07-25T15:30:11.869Z","pid":14112,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Worker 0 died"}
+{"level":30,"time":"2023-07-25T17:36:03.718Z","pid":1348,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Server is running on port 3002"}
+{"level":50,"time":"2023-07-25T17:36:04.728Z","pid":1348,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:36:05.731Z","pid":1348,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:36:06.734Z","pid":1348,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:36:07.738Z","pid":1348,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:36:08.738Z","pid":1348,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:36:09.739Z","pid":1348,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:36:10.743Z","pid":1348,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:36:11.743Z","pid":1348,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:36:12.745Z","pid":1348,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:36:13.745Z","pid":1348,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:36:14.747Z","pid":1348,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:36:15.749Z","pid":1348,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:36:16.755Z","pid":1348,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:36:17.759Z","pid":1348,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":30,"time":"2023-07-25T17:36:19.519Z","pid":27684,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Server is running on port 3002"}
+{"level":50,"time":"2023-07-25T17:36:20.522Z","pid":27684,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:36:21.530Z","pid":27684,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:36:22.530Z","pid":27684,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:36:23.535Z","pid":27684,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:36:24.539Z","pid":27684,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":30,"time":"2023-07-25T17:36:26.921Z","pid":3552,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Server is running on port 3002"}
+{"level":50,"time":"2023-07-25T17:36:27.923Z","pid":3552,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:36:28.928Z","pid":3552,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:36:29.930Z","pid":3552,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:36:30.936Z","pid":3552,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":30,"time":"2023-07-25T17:36:32.361Z","pid":24268,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Server is running on port 3002"}
+{"level":50,"time":"2023-07-25T17:36:33.368Z","pid":24268,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:36:34.382Z","pid":24268,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:36:35.384Z","pid":24268,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:36:36.386Z","pid":24268,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":30,"time":"2023-07-25T17:36:38.248Z","pid":19560,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Server is running on port 3002"}
+{"level":50,"time":"2023-07-25T17:36:39.255Z","pid":19560,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:36:40.269Z","pid":19560,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:36:41.272Z","pid":19560,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:36:42.274Z","pid":19560,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:36:43.277Z","pid":19560,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:36:44.279Z","pid":19560,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:36:45.284Z","pid":19560,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:36:46.288Z","pid":19560,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:36:47.295Z","pid":19560,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:36:48.299Z","pid":19560,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:36:49.300Z","pid":19560,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:36:50.303Z","pid":19560,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":30,"time":"2023-07-25T17:36:52.183Z","pid":16912,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Server is running on port 3002"}
+{"level":50,"time":"2023-07-25T17:36:53.190Z","pid":16912,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:36:54.195Z","pid":16912,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:36:55.198Z","pid":16912,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:36:56.204Z","pid":16912,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:36:57.209Z","pid":16912,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:36:58.215Z","pid":16912,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:36:59.218Z","pid":16912,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:37:00.218Z","pid":16912,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:37:01.221Z","pid":16912,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:37:02.222Z","pid":16912,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:37:03.223Z","pid":16912,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":50,"time":"2023-07-25T17:37:04.231Z","pid":16912,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Wat 0"}
+{"level":30,"time":"2023-07-25T17:37:05.952Z","pid":20256,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Server is running on port 3002"}
+{"level":20,"time":"2023-07-25T17:37:19.416Z","pid":20256,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"\"/index.html\" --> \n   --> Responding With --> \"D:\\Backup\\CS.Programming\\Languages\\WebDev\\NodeJS\\TemplateTSWebpack01\\public\\dist\\index.html\""}
+{"level":20,"time":"2023-07-25T17:37:19.444Z","pid":20256,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"\"/main.js\" --> \n   --> Responding With --> \"D:\\Backup\\CS.Programming\\Languages\\WebDev\\NodeJS\\TemplateTSWebpack01\\public\\dist\\main.js\""}
+{"level":20,"time":"2023-07-25T17:37:19.464Z","pid":20256,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"\"/favicon.ico\" --> \n   --> Responding With --> \"D:\\Backup\\CS.Programming\\Languages\\WebDev\\NodeJS\\TemplateTSWebpack01\\public\\dist\\favicon.ico\""}
+{"level":40,"time":"2023-07-25T17:38:13.407Z","pid":20256,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"INVALID PATH REQ: \"D:\\Backup\\CS.Programming\\Languages\\WebDev\\NodeJS\\TemplateTSWebpack01\\public\\dist\\indsdf\""}
+{"level":20,"time":"2023-07-25T17:38:13.407Z","pid":20256,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"\"/indsdf\" --> \n   --> Responding With --> \"D:\\Backup\\CS.Programming\\Languages\\WebDev\\NodeJS\\TemplateTSWebpack01\\public\\dist\\404.html\""}
+{"level":20,"time":"2023-07-25T17:38:13.710Z","pid":20256,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"\"/favicon.ico\" --> \n   --> Responding With --> \"D:\\Backup\\CS.Programming\\Languages\\WebDev\\NodeJS\\TemplateTSWebpack01\\public\\dist\\favicon.ico\""}
+{"level":30,"time":"2023-07-25T17:38:35.271Z","pid":23276,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Server is running on port 3002"}
+{"level":30,"time":"2023-07-25T17:39:54.138Z","pid":23280,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Server is running on port 3002"}
+{"level":20,"time":"2023-07-25T17:39:57.393Z","pid":23280,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"\"/index.html\" --> \n   --> Responding With --> \"D:\\Backup\\CS.Programming\\Languages\\WebDev\\NodeJS\\TemplateTSWebpack01\\public\\dist\\index.html\""}
+{"level":20,"time":"2023-07-25T17:39:57.414Z","pid":23280,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"\"/main.js\" --> \n   --> Responding With --> \"D:\\Backup\\CS.Programming\\Languages\\WebDev\\NodeJS\\TemplateTSWebpack01\\public\\dist\\main.js\""}
+{"level":20,"time":"2023-07-25T17:39:57.433Z","pid":23280,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"\"/favicon.ico\" --> \n   --> Responding With --> \"D:\\Backup\\CS.Programming\\Languages\\WebDev\\NodeJS\\TemplateTSWebpack01\\public\\dist\\favicon.ico\""}
+{"level":30,"time":"2023-07-25T17:40:49.705Z","pid":23448,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Server is running on port 3002"}
+{"level":30,"time":"2023-07-25T17:40:58.835Z","pid":9676,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Server is running on port 3002"}
+{"level":30,"time":"2023-07-25T17:41:15.553Z","pid":27456,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Server is running on port 3002"}
+{"level":30,"time":"2023-07-25T17:41:30.556Z","pid":28284,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Server is running on port 3002"}
+{"level":30,"time":"2023-07-25T17:42:01.741Z","pid":27408,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Server is running on port 3002"}
+{"level":30,"time":"2023-07-25T17:42:39.307Z","pid":4616,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Server is running on port 3002"}
+{"level":30,"time":"2023-07-25T17:42:48.494Z","pid":22860,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Server is running on port 3002"}
+{"level":30,"time":"2023-07-25T17:44:59.026Z","pid":13488,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Creating 1 child"}
+{"level":30,"time":"2023-07-25T17:45:00.155Z","pid":27716,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tCHILD-0","msg":"Server is running on port 3002"}
+{"level":30,"time":"2023-07-25T17:45:18.547Z","pid":10692,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Creating 1 child"}
+{"level":30,"time":"2023-07-25T17:45:19.689Z","pid":21376,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tCHILD-0","msg":"Server is running on port 3002"}
+{"level":30,"time":"2023-07-25T17:45:38.168Z","pid":16500,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Creating 1 child"}
+{"level":30,"time":"2023-07-25T17:45:39.288Z","pid":26236,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tCHILD-0","msg":"Server is running on port 3002"}
+{"level":30,"time":"2023-07-25T17:45:54.157Z","pid":16500,"hostname":"F15G","name":"\b \tSRCNOTSET","name":"\b \tMAIN","msg":"Worker 0 died"}

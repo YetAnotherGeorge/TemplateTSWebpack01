@@ -6,8 +6,6 @@
     <CleanCommand>npm run clean</CleanCommand>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="dist\" />
-    <Folder Include="logs\" />
     <Folder Include="public\" />
     <Folder Include="public\dist\" />
     <Folder Include="src-common\" />
