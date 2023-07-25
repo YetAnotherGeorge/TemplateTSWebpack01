@@ -363,4 +363,4 @@ MigrationBackup/
 FodyWeavers.xsd
 /public/package-lock.json
 /dist/*
-/logs/*
+/logs/*.log
