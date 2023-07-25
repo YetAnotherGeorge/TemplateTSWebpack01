@@ -1,0 +1,5 @@
+{
+  "ext": "ts,json,config",
+  "ignore": [ "public", ".vscode", "node_modules" ],
+  "exec": "ts-node --esm --project .\\tsconfig.json .\\src\\server.ts"
+}

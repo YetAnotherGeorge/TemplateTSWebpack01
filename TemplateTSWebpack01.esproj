@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/0.5.83-alpha">
+  <PropertyGroup>
+    <!-- Command to run on project build -->
+    <BuildCommand>npm run build</BuildCommand>
+    <!-- Command to run on project clean -->
+    <CleanCommand>npm run clean</CleanCommand>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="dist\" />
+    <Folder Include="logs\" />
+    <Folder Include="public\" />
+    <Folder Include="public\dist\" />
+    <Folder Include="src-common\" />
+    <Folder Include="src\" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties tsconfig_1json__JsonSchema="https://datahubproject.io/schemas/datahub_ingestion_schema.json" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
