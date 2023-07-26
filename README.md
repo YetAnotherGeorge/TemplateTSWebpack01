@@ -6,8 +6,8 @@ The goal of this template is to have a correctly setup project template that all
 -> Shared typescript files between backend and front-end using the src-common dir
 
 ###  [development] Run:
--- Backend: `npm run devb`
+-- Backend: `npm run devb` 
 
--- Frontend:  `cd ./public; npm run devf`
+-- Frontend:  `cd ./public; npm run devf` 
 
 -- Frontend:  `cd ./public; npm run hotReload` 
