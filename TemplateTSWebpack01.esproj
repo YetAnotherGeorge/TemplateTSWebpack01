@@ -11,7 +11,7 @@
   </ItemGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties tsconfig_1json__JsonSchema="https://datahubproject.io/schemas/datahub_ingestion_schema.json" />
+      <UserProperties />
     </VisualStudio>
   </ProjectExtensions>
 </Project>
