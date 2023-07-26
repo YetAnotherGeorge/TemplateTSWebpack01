@@ -7,7 +7,5 @@ The goal of this template is to have a correctly setup project template that all
 
 ###  [development] Run:
 -- Backend: `npm run devb` 
-
 -- Frontend:  `cd ./public; npm run devf` 
-
 -- Frontend:  `cd ./public; npm run hotReload` 
