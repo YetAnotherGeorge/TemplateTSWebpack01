@@ -3,7 +3,7 @@
     "allowSyntheticDefaultImports": true,
     "lib": [ "es2022" , "DOM"],
     "noImplicitAny": true,
-    "module": "commonjs",
+    "module": "commonjs", // if not set to commonjs, there will appear errors when using the import syntax sometimes
     "target": "es2022",
     "allowJs": true
   },
