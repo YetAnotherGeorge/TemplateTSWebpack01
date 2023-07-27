@@ -6,8 +6,9 @@ The goal of this template is to have a correctly setup project template that all
 -> Shared typescript files between backend and front-end using the src-common dir
 
 ###  Initialize:
-  .> `npm install`
-  .\public> `npm install` 
+  `.> npm install` 
+  
+   `./public> npm install` 
 
 ###  [development] Run:
 -- Backend: `npm run devb` 
