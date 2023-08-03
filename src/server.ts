@@ -1,5 +1,6 @@
 import cluster, { Worker } from "cluster";
 import * as http from "http";
+import * as https from "https";
 import * as fs from "fs";
 import * as path from "path";
 import pino from "pino";
@@ -7,6 +8,7 @@ import pinoHttp from "pino-http";
 import * as process from "process";
 import express, { Request, Response, Application } from 'express';
 // CUSTOM
+import * as iconfig from "./srv-configs/iconfig.ts"
 import { RegisterGlobalErrorHandlers } from "./log_intercept_all";
 import * as cstLog from "./logger_pino";
 //// BACKEND+FRONTEND COMMON LIBS
@@ -21,6 +23,7 @@ const basePath: string = path.resolve(".");
 if (!fs.existsSync(basePath)) {
    throw new Error(`basePath does not exist: ${basePath}`);
 }
+const config: iconfig.IServerConfig = iconfig.LoadFromFile(path.resolve("./src/srv-configs/config.json"));
 //#endregion
 
 //#region LOGGING
@@ -28,14 +31,15 @@ let logger: pino.Logger;
 let sourceLogger: pino.Logger | null;
 
 (() => {
-   let p: string = path.join(basePath, "logs", "server.log");
-   
+   let p: string = path.join(path.resolve("./logs/server.log"));
+
    if (!fs.existsSync(path.dirname(p)))
       throw new Error(`Logs folder does not exist: ${path.dirname(p)}`);
    sourceLogger = cstLog.CreateLogger(p, "debug", "\b \tSRCNOTSET");
 
    let name = "MAIN";
-   if (cluster.isWorker) {
+   if (!cluster.isPrimary) {
+      console.log(`NOT MAIN: WID: ${process.env.wid}`);
       if (process.env.wid != null)
          name = `CHILD-${process.env.wid}`;
       else
@@ -70,6 +74,7 @@ function masterProcess() {
    let numCPUs = 1; // or require("os").cpus().length;
    logger.info(`Creating ${numCPUs} ${numCPUs === 1 ? "child" : "children"}`)
    for (let i = 0; i < numCPUs; i++) {
+      logger.info(`Creating worker with Worker ID (WID): ${i}`);
       let w: Worker = cluster.fork({ wid: i });
       workerMap.set(w, i);
    }
@@ -84,8 +89,6 @@ function masterProcess() {
 }
 function childProcess() {
    if (logger === null) { throw new Error("Logger is null"); }
-
-   const TEST_PORT: number = 3002;
    const fileMap = {
       public: path.join(basePath, "public", "dist"),
       err404: path.join(basePath, "public", "dist", "404.html")
@@ -97,6 +100,8 @@ function childProcess() {
    const logResp = (url: string, p: string) => {
       logger.debug(`"${url}" --> \n   --> Responding With --> "${p}"`);
    }
+
+   app.get("/", (req, res) => res.redirect("/index.html"))
 
    let tGetLast: number = 0; // used only for appending spaces to separate requests on the console
    app.get('/*', (req, res) => {
@@ -115,7 +120,38 @@ function childProcess() {
       res.sendFile(p);
    });
 
-   app.listen(TEST_PORT, () => {
-      logger.info(`Server is running on port ${TEST_PORT}`);
-   });
+   //#region EXPOSE_HTTP
+   try {
+      const httpServer = http.createServer(app);
+      httpServer.listen(config.portHttp);
+      logger.info(`Express app exposed to port ${config.portHttp} (HTTP)`);
+   } catch (ex) {
+      if (ex instanceof Error) {
+         logger.error(`Could not start http server - Reason: ${ex.message}`);
+      } else {
+         throw ex;
+      }
+   }
+   //#endregion
+
+   //#region EXPOS_HTTPS
+   try {
+      const pkey: string = fs.readFileSync(path.join(basePath, "sslcert", "localhost.key"), "utf-8");
+      const cert: string = fs.readFileSync(path.join(basePath, "sslcert", "localhost.cert"), "utf-8");
+      const httpsConfig: https.ServerOptions = {
+         key: pkey,
+         cert: cert
+      };
+   
+      const httpsServer = https.createServer(httpsConfig, app);
+      httpsServer.listen(config.portHttps);
+      logger.info(`Express app exposed to port ${config.portHttps} (HTTPS)`);
+   } catch (ex) {
+      if (ex instanceof Error) {
+         logger.error(`Could not start https server - Reason: ${ex.message}`);
+      } else {
+         throw ex;
+      }
+   }
+   //#endregion
 }

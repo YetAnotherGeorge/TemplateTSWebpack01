@@ -6,8 +6,8 @@
     "build": "webpack --mode=production --node-env=production",
     "build:dev": "webpack --mode=development",
     "build:prod": "webpack --mode=production --node-env=production",
-    "devf": "webpack --watch",
-    "hotReload": "browser-sync start --proxy http://localhost:3002 --files=**/*  --ignore=node_modules --no-ui --no-inject-changes"
+    "dev:webpack": "webpack --watch",
+    "dev": "concurrently \"npm:dev:webpack\""
   },
   "devDependencies": {
     "copy-webpack-plugin": "^11.0.0",

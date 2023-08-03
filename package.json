@@ -4,9 +4,11 @@
   "description": "",
   "main": "dist/server.js",
   "scripts": {
-    "devb": "nodemon --config .\\nodemon.json",
     "build": "tsc --build",
-    "clean": "tsc --build --clean"
+    "clean": "tsc --build --clean",
+    "dev:ts": "nodemon --config .\\nodemon.json",
+    "dev:hotReload": "powershell -file hotReload.ps1 \"%cd%\"",
+    "dev": "concurrently --kill-others-on-fail \"npm:dev:ts\" \"npm:dev:hotReload\""
   },
   "keywords": [],
   "author": "",
@@ -16,6 +18,7 @@
     "@types/node": "^20.4.4",
     "@typescript-eslint/eslint-plugin": "^6.2.0",
     "@typescript-eslint/parser": "^6.2.0",
+    "concurrently": "^8.2.0",
     "eslint": "^8.45.0",
     "typescript": "^5.1.6"
   },
