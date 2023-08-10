@@ -21,9 +21,12 @@ const config = {
       }),
       new CopyPlugin({
          patterns: [
-            { from: "src/*.css"        , to: "[name][ext]" },
-            { from: "src/404.html"     , to: "[name][ext]" },
-            { from: "src/favicon.ico"  , to: "[name][ext]" }
+            { from: "src/*.css", to: "[name][ext]" },
+            { from: "src/404.html", to: "[name][ext]" },
+            { from: "src/favicon.ico", to: "[name][ext]" },
+            { from: "src/fonts", to: "fonts" },
+            { from: "src/images", to: "images" },
+            { from: "src/licenses", to: "licenses" }
          ]
       })
       // Add your plugins here
