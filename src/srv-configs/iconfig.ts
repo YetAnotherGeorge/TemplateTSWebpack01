@@ -3,7 +3,7 @@ import * as fs from "fs";
 export type IServerConfig = {
    portHttp: number,
    portHttps: number,
-   logFilePath: string
+   multithread: boolean
 }
 
 export function LoadFromFile(path: string, encoding: BufferEncoding = "utf-8"): IServerConfig {

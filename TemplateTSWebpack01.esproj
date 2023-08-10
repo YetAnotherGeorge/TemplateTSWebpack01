@@ -6,7 +6,6 @@
     <CleanCommand>npm run clean</CleanCommand>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="src\srv-configs\" />
     <Folder Include="src-common\" />
   </ItemGroup>
   <ProjectExtensions>

@@ -1,4 +1,5 @@
 {
   "portHttp": 3010,
-  "portHttps": 3011
+  "portHttps": 3011,
+  "multithread": false
 }
