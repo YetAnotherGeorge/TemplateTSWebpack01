@@ -1,0 +1,30 @@
+/* FONTS */
+@font-face {
+   font-family: 'Oxygen Mono';
+   font-style: normal;
+   font-weight: 400;
+   font-display: swap;
+   src: url(fonts/OxygenMono-Regular.woff2) format('woff2'), url(fonts/OxygenMono-Regular.woff) format('woff');
+}
+
+:root {
+   --col-dark-01: #212131;
+   --col-dark-02: #465d85;
+   --col-green-01: #b1cfc1;
+   --col-yellow-01: #d4d43a;
+   --col-yellow-02: #dada96;
+   --col-green-02: #476b48;
+   --col-downloading: #a76166;
+   --col-text-light-01: #e5e5e5;
+   --col-text-light-02: #fafafa;
+   --col-turquioise-01: #6d8d96;
+   --col-white-01: #c2c2c2;
+   --font-01: 'Oxygen Mono', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   --font-size-01: 12px;
+}
+
+body {
+   background-color: var(--col-dark-01);
+   color: var(--col-text-light-01);
+   font-family: var(--font-01);
+}

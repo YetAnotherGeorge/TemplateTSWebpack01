@@ -139,8 +139,6 @@ function childProcess() {
       next();
    })
 
-   TransportsMain(GetChildLogger, app);
-
    // CLIENT REQUESTED LOGGER UID
    let loggerUID: number = 5000;
    app.get(AUPaths.LoggingUid, (req, res) => {
@@ -232,8 +230,8 @@ function childProcess() {
 
    //#region EXPOS_HTTPS
    try {
-      const pkey: string = fs.readFileSync(path.join(basePath, "sslcert", "localhost.key"), "utf-8");
-      const cert: string = fs.readFileSync(path.join(basePath, "sslcert", "localhost.cert"), "utf-8");
+      const pkey: string = fs.readFileSync(path.join(".", "sslcert", "localhost.key"), "utf-8");
+      const cert: string = fs.readFileSync(path.join(".", "sslcert", "localhost.cert"), "utf-8");
       const httpsConfig: https.ServerOptions = {
          key: pkey,
          cert: cert
