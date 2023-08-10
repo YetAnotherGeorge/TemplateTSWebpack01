@@ -11,8 +11,6 @@ The goal of this template is to have a correctly setup project template that all
    `./public> npm install` 
 
 ###  [development] Run:
--- Backend: `npm run devb` 
+-- Backend: `npm run dev` 
 
--- Frontend:  `cd ./public; npm run devf` 
-
--- Frontend:  `cd ./public; npm run hotReload` 
+-- Frontend:  `cd ./public; npm run dev` 
