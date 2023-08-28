@@ -182,38 +182,19 @@ function childProcess() {
 
 
    //#region RETURN_FILES
-   app.get("/", (_, res) => res.redirect("/index.html"));
-   const fileMap = {
+   const fileMap: { public: string, err404: string } = Object.freeze({
       public: path.resolve("./public/dist"),
       err404: path.resolve("./public/dist/404.html")
-   }
-   let tGetLast: number = 0; // used only for appending spaces to separate requests on the console
-   app.get('/*', (req, res) => {
-      let tNow: number = new Date().getTime();
-      let tGetDelta = tNow - tGetLast;
-      if (tGetDelta > 1000)
-         console.log();
-      tGetLast = tNow;
-
-      let u: string = decodeURIComponent(req.url);
-      if (u.includes("..")) {
-         logger.warn(`Security warning: ${req.ip} may have attempted to escape out of the public directory; requested url: \"${req.url}\": `
-            + `RAW HEADERS: ${JSON.stringify(req.rawHeaders)}`);
-         res.end();
-         return;
-      }
-      // u may at any point contain a chain of "../../", path.join will allow 
-      // the request to escape out of fileMap.public in that case although it 
-      // seems that double dots are stripped by express before this point ??
-      let p: string = path.join(fileMap.public, u);
-      if (!fs.existsSync(p) || !fs.statSync(p).isFile()) {
-         logger.warn(`INVALID PATH REQ, NO SUCH MATCHING FILE: "${p}"`);
-         p = fileMap.err404;
-         logger.debug(`Responding With --> "${p}"`);
-      }
-      res.sendFile(p);
    });
-   //#endregion
+
+   app.get("/", (_, res) => res.redirect("/index.html"));
+   app.use(express.static(fileMap.public));
+   app.get("/*", (req, res) => {
+       let p: string = decodeURI(req.url);
+       logger.warn(`Requested path that does not exist: \"${p}\", responding with 404`);
+       res.sendFile(fileMap.err404);
+   })
+
 
    //#region EXPOSE_HTTP
    try {
