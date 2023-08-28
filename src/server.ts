@@ -142,7 +142,8 @@ function childProcess() {
    // CLIENT REQUESTED LOGGER UID
    let loggerUID: number = 5000;
    app.get(AUPaths.LoggingUid, (req, res) => {
-      res.send(loggerUID.toString());
+      const sendRes = res.send(loggerUID.toString());
+      logger.info(`Is sendRes equal to res?: ${res === sendRes}`);
       logger.info(`RESP TO ${req.ip} REQUEST -> ${loggerUID.toString()}`);
       loggerUID++;
    });

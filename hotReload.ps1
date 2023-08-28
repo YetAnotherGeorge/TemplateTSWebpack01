@@ -14,4 +14,4 @@ $url = "http://localhost:$portHttp";
 Write-Output "Starting browser-sync with url: $url";
 
 Start-Sleep -Milliseconds 4500;
-browser-sync start --proxy $url --files=**/*  --ignore=node_modules --no-ui --no-inject-changes
+browser-sync start --proxy $url --files=**/*  --ignore=node_modules --no-ui --no-inject-changes --no-open
