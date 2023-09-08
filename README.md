@@ -5,6 +5,7 @@ The goal of this template is to have a correctly setup project template that all
 -> Frontend Node.js package management via webpack
 -> Shared typescript files between backend and front-end using the src-common dir
 
+# WARNING: ALL JS FILES IN THE SRC DIR WILL BE TAKEN INTO ACCOUNT BY TSC AND THUS MAY PRODUCE ERRORS
 ###  Initialize:
   `.> npm install` 
   
