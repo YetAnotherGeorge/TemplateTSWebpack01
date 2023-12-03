@@ -1,35 +1,44 @@
 {
-  "name": "templatetswebpack01",
-  "version": "1.0.0",
+  "name": "ylib-ws-message-flow",
+  "version": "1.0.1",
   "description": "",
-  "main": "dist/server.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "dev:server": "ts-node-dev --files --transpile-only --respawn --inspect=4321 --project tsconfig.json .\\src\\serverMain.ts",
+    "dev:browsersync": "delay 3.0 && browser-sync start --config bs-config.js",
+    "dev": "concurrently --kill-others-on-fail \"npm:dev:server\" \"npm:dev:browsersync\"",
+    "exportLocal": "tsup && npm pack",
     "build": "tsc --build",
-    "clean": "tsc --build --clean",
-    "dev:ts": "nodemon --config .\\nodemon.json",
-    "dev:hotReload": "powershell -file hotReload.ps1 \"%cd%\"",
-    "dev": "concurrently --kill-others-on-fail \"npm:dev:ts\" \"npm:dev:hotReload\""
+    "clean": "tsc --build --clean"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/express": "^4.17.17",
-    "@types/node": "^20.4.4",
-    "@typescript-eslint/eslint-plugin": "^6.4.1",
-    "@typescript-eslint/parser": "^6.2.0",
-    "concurrently": "^8.2.0",
-    "eslint": "^8.47.0",
-    "eslint-config-standard-with-typescript": "^38.0.0",
-    "eslint-plugin-import": "^2.28.1",
-    "eslint-plugin-n": "^16.0.2",
-    "eslint-plugin-promise": "^6.1.1",
-    "typescript": "^5.1.6"
+    "@types/express": "^4.17.20",
+    "@types/node": "^20.8.9",
+    "@types/ws": "^8.5.8",
+    "@typescript-eslint/eslint-plugin": "^6.9.0",
+    "@typescript-eslint/parser": "^6.9.0",
+    "concurrently": "^8.2.2",
+    "delay-cli": "^2.0.0",
+    "eslint": "^8.52.0",
+    "ts-node-dev": "^2.0.0",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
   },
   "dependencies": {
     "express": "^4.18.2",
-    "pino": "^8.14.1",
-    "pino-http": "^8.3.3",
-    "pino-pretty": "^10.2.0"
+    "i": "^0.3.7",
+    "npm": "^10.2.4",
+    "socket.io": "^4.7.2",
+    "socket.io-client": "^4.7.2",
+    "strict-event-emitter": "^0.5.1",
+    "ws": "^8.14.2"
   }
 }

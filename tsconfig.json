@@ -1,4 +1,9 @@
 {
+  "include": [
+    "./src/*.ts",
+    "./src-common/*.ts",
+    "./tsup.config.ts"
+  ],
   "compilerOptions": {
     /* |>>>>>>> PROJECTS <<<<<<<| */
 
@@ -286,6 +291,5 @@
 
     /* Skip type checking all .d.ts files. */
     "skipLibCheck": true
-
   }
 }

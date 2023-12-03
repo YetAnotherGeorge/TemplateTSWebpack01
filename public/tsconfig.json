@@ -1,16 +1,4 @@
 {
-  //"compilerOptions": {
-  //  "allowSyntheticDefaultImports": true,
-  //  "lib": [ "es2022", "DOM" ],
-  //  "noImplicitAny": true,
-  //  "module": "es2022", // if not set to commonjs, there will appear errors when using the import syntax sometimes
-  //  "target": "es2022",
-  //  "allowJs": true,
-  //  "rootDir": "./src",
-  //  "outDir": "./dist"
-  //},
-
-  "files": [ "src/index.ts" ],
   "compilerOptions": {
     /* |>>>>>>> PROJECTS <<<<<<<| */
 
@@ -75,13 +63,13 @@
     /* |>>>>>>> MODULES <<<<<<<| */
 
     /* Specify what module code is generated. */
-    "module": "es2022",
+    "module": "NodeNext",
 
     /* Specify the root folder within your source files. */
-    // "rootDir": "./src",
+    //"rootDir": "./src",
 
     /* Specify how TypeScript looks up a file from a given module specifier. */
-    // "moduleResolution": "node10",                     
+    "moduleResolution": "NodeNext",
 
     /* Specify the base directory to resolve non-relative module names. */
     // "baseUrl": "./",                                  

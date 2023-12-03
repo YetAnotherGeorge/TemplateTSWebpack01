@@ -365,4 +365,9 @@ FodyWeavers.xsd
 /dist/*
 /logs/*.log
 /package-lock.json
+
+## CUSTOM 
+/dist
+/public/dist
 /public/dist/*
+node_modules/**

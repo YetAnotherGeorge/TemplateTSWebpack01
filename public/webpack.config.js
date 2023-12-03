@@ -21,16 +21,19 @@ const config = {
       }),
       new CopyPlugin({
          patterns: [
-            { from: "src/*.css", to: "[name][ext]" },
-            { from: "src/404.html", to: "[name][ext]" },
-            { from: "src/favicon.ico", to: "[name][ext]" },
-            { from: "src/fonts", to: "fonts" },
-            { from: "src/images", to: "images" },
-            { from: "src/licenses", to: "licenses" }
+            { from: "src/*.css"     , to: "[name][ext]" },
+            { from: "src/404.html"  , to: "[name][ext]" },
+
+            { from: "src/fonts"     , to: "fonts" },
+            { from: "src/images"    , to: "images" },
+            { from: "src/licenses"  , to: "licenses" },
+            { from: "src/lib"       , to: "lib" }  
          ]
       })
-      // Add your plugins here
-      // Learn more about plugins from https://webpack.js.org/configuration/plugins/
+      //// Work around for Buffer is undefined:
+      //// https://github.com/webpack/changelog-v5/issues/10
+      //new webpack.ProvidePlugin({ Buffer: ['buffer', 'Buffer'] }),
+      //new webpack.ProvidePlugin({ process: 'process/browser', })
    ],
    module: {
       rules: [

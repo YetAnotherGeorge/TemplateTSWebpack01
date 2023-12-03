@@ -1,0 +1,7 @@
+*.esproj
+*.tgz
+nuget.config
+node_modules
+.vscode
+src
+obj

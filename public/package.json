@@ -1,13 +1,15 @@
 {
   "version": "1.0.0",
-  "description": "My webpack project",
-  "name": "my-webpack-project",
+  "description": "Frontend (Webpack)",
+  "name": "frontend-webpack",
   "scripts": {
     "build": "webpack --mode=production --node-env=production",
     "build:dev": "webpack --mode=development",
     "build:prod": "webpack --mode=production --node-env=production",
-    "dev:webpack": "webpack --watch",
-    "dev": "concurrently \"npm:dev:webpack\""
+    "build:export:webpack": "webpack",
+    "build:export:tsc": "tsc --project .\\tsconfig.export.json",
+    "build:export": "npm run build:export:webpack && npm run build:export:tsc",
+    "dev": "webpack --watch"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^11.0.0",
@@ -21,9 +23,8 @@
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
-    "@types/geojson": "^7946.0.10",
-    "@types/leaflet": "^1.9.3",
-    "leaflet": "^1.9.4",
-    "source-map-loader": "^4.0.1"
+    "angularjs-ts": "file:angularjs-ts-1.0.0.tgz",
+    "source-map-loader": "^4.0.1",
+    "strict-event-emitter": "^0.5.1"
   }
 }
